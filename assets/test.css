@@ -14,9 +14,22 @@
     --bg-vibrant-green: #30F284;
     --bg-vibrant-blue: #85F2E7;
 
-    --bg-dark-purple: #180731;
-    --bg-transparent-dark-purple: rgba(24, 7, 49, 0.8);
+    --ft-darker-green: #158f4a;
+
+    /* Old values : #180731, rgba(24, 7, 49, 0.8)*/
+    --bg-dark-purple: #2b0761;
+    --bg-transparent-dark-purple: #2b076194;
     --bg-clean-beige: #EDE1CC;
+}
+
+::-moz-selection {
+  color: var(--ft-darker-green);
+  background: var(--bg-vibrant-green);
+}
+
+::selection {
+  color: var(--ft-darker-green);
+  background: var(--bg-vibrant-green);
 }
 
 h1,
@@ -25,6 +38,7 @@ h3,
 p {
     color: white;
     margin: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -34,17 +48,14 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /*background: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80');*/
-    background-image: url('../assets/images/oled-glass-background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /*background-color: var(--bg-dark-purple);*/
+    background-color: var(--bg-dark-purple);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -53,12 +64,7 @@ header {
     height: 100px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-
-#logo img {
-    width: auto;
-    height: 80px;
+    justify-content: center;
 }
 
 /* --- LE CHAMP DE RECHERCHE --- */
@@ -127,20 +133,32 @@ header {
     margin-bottom: 10px;
 }
 
+.content div {
+    margin-bottom: 20px;
+}
 
 .presentation {
     display: flex;
     flex-direction: column;
     align-items: left;
+
+    width: 50%;
+    height: auto;
+    border-radius: 18px;
+    padding: 5px 20px;
 }
 
 .presentation h1 {
-    font-size: 1000%;
+    font-size: 500%;
     width: 100%;
 }
 
-.project,
+.presentation h2, h1 {
+    margin: 0;
+}
+
 .about,
+.project,
 .contact {
     width: 50%;
     height: auto;
