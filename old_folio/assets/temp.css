@@ -1,0 +1,46 @@
+:root {
+  --bg-vibrant-red: #F20C1F;
+  --bg-vibrant-yellow: #FBD109;
+  --bg-vibrant-green: #30F284;
+  --bg-vibrant-blue: #85F2E7;
+
+  --bg-dark-purple: #180731;
+  --bg-clean-beige: #EDE1CC;
+}
+
+
+body {
+    font-family: 'Outfit', sans-serif;
+    scroll-behavior: smooth;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    gap: 10px;
+}
+
+.content {
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+button {
+  border: black;
+  border-radius: 10px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}

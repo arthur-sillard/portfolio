@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+    --color-special-white-1: #FFFFFF;
+    --color-special-white-2: #F2F2F2;
+    --color-special-white-3: #E4E4E4;
+
+
+    --color-amber-gold-50: #fff8e5;
+    --color-amber-gold-100: #fff1cc;
+    --color-amber-gold-200: #ffe499;
+    --color-amber-gold-300: #ffd666;
+    --color-amber-gold-400: #ffc933;
+    --color-amber-gold-500: #ffbb00;
+    --color-amber-gold-600: #cc9600;
+    --color-amber-gold-700: #997000;
+    --color-amber-gold-800: #664b00;
+    --color-amber-gold-900: #332500;
+    --color-amber-gold-950: #241a00;
+
+    --color-blaze-orange-50: #ffeee6;
+    --color-blaze-orange-100: #fedccd;
+    --color-blaze-orange-200: #fdba9b;
+    --color-blaze-orange-300: #fd9768;
+    --color-blaze-orange-400: #fc7536;
+    --color-blaze-orange-500: #fb5204;
+    --color-blaze-orange-600: #c94203;
+    --color-blaze-orange-700: #973102;
+    --color-blaze-orange-800: #642102;
+    --color-blaze-orange-900: #321001;
+    --color-blaze-orange-950: #230c01;
+
+    --color-neon-pink-50: #ffe5f1;
+    --color-neon-pink-100: #ffcce2;
+    --color-neon-pink-200: #ff99c5;
+    --color-neon-pink-300: #ff66a8;
+    --color-neon-pink-400: #ff338b;
+    --color-neon-pink-500: #ff006e;
+    --color-neon-pink-600: #cc0058;
+    --color-neon-pink-700: #990042;
+    --color-neon-pink-800: #66002c;
+    --color-neon-pink-900: #330016;
+    --color-neon-pink-950: #24000f;
+
+    --color-blue-violet-50: #f0e8fd;
+    --color-blue-violet-100: #e2d0fb;
+    --color-blue-violet-200: #c5a2f6;
+    --color-blue-violet-300: #a873f2;
+    --color-blue-violet-400: #8b44ee;
+    --color-blue-violet-500: #6e16e9;
+    --color-blue-violet-600: #5811bb;
+    --color-blue-violet-700: #420d8c;
+    --color-blue-violet-800: #2c095d;
+    --color-blue-violet-900: #16042f;
+    --color-blue-violet-950: #0f0321;
+
+    --color-azure-blue-50: #e5efff;
+    --color-azure-blue-100: #cce0ff;
+    --color-azure-blue-200: #99c0ff;
+    --color-azure-blue-300: #66a1ff;
+    --color-azure-blue-400: #3381ff;
+    --color-azure-blue-500: #0062ff;
+    --color-azure-blue-600: #004ecc;
+    --color-azure-blue-700: #003b99;
+    --color-azure-blue-800: #002766;
+    --color-azure-blue-900: #001433;
+    --color-azure-blue-950: #000e24;
+}

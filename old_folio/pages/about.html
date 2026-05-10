@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/test.css">
+    <title>Arthur Sillard</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-box">
+            <ul>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="projects.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <svg style="position: absolute; width: 0; height: 0;">
+        <filter id="liquid-refraction" x="-20%" y="-20%" width="140%" height="140%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.02" numOctaves="3" result="noise" />
+
+            <feDisplacementMap in="SourceGraphic" in2="noise" scale="20" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+    </svg>
+
+
+    <div class="content">
+        <div class="presentation">
+            <h2>Bonjour ! Je suis</h2>
+            <h1>Arthur Sillard</h1>
+            <h2>Étudiant en informatique à Nantes.</h2>
+        </div>
+        <h1>À propos</h1>
+        <div class="about">
+            <h3>Qui suis-je ?</h3>
+            <p>Je suis actuellement étudiant en BUT informatique à l'université de Nantes où j'ai la chance d'apprendre les bases et fondamentaux de ce domaine.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
