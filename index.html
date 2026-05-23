@@ -6,36 +6,36 @@
     <title>Arthur Sillard</title>
     <link href="./dist/output.css" rel="stylesheet">
 </head>
-<body class="bg-special-white-3 dark:bg-special-grey-3 antialiased">
+<body class="bg-classic-white-1 dark:bg-classic-black-1 antialiased">
     
     <div class="max-w-5xl mx-auto px-6">
         <header class="flex justify-between items-center p-4">
-            <a href="#" class="dark:text-white text-xl font-semibold tracking-tight">
+            <a href="#" class="text-classic-black-text dark:text-classic-white-text text-xl font-semibold tracking-tight">
                 Arthur Sillard
             </a>
 
 
-            <nav class="hidden md:flex items-center gap-8 text-sm text-zinc-600 dark:text-zinc-300">
-                <a href="#Projects" class="hover:text-black dark:hover:text-white transition">Projets</a>
-                <a href="#About" class="hover:text-black dark:hover:text-white transition">À propos</a>
-                <a href="#Contact" class="hover:text-black dark:hover:text-white transition">Contactez moi</a>
+            <nav class="hidden md:flex items-center gap-8 text-sm text-classic-black-text-muted dark:text-classic-white-text-muted">
+                <a href="#Projects" class="hover:text-classic-black-text dark:hover:text-classic-white-text transition">Projets</a>
+                <a href="#About" class="hover:text-classic-black-text dark:hover:text-classic-white-text transition">À propos</a>
+                <a href="#Contact" class="hover:text-classic-black-text dark:hover:text-classic-white-text transition">Contactez moi</a>
             </nav>
         </header>
 
         <!-- Hero -->
         <section class="py-8 md:py-10">
             <div class="max-w-3xl mx-auto px-6 py-3">
-                <h1 class="dark:text-white text-xl sm:text-2xl md:text-3xl font-bold tracking-tight">
+                <h1 class="text-classic-black-text dark:text-classic-white-text text-xl sm:text-2xl md:text-3xl font-bold tracking-tight">
                     Bonjour, je suis Arthur <br>
                     Étudiant en BUT informatique
                 </h1>
 
-                <h2 class="text-zinc-700 dark:text-zinc-400 mb-1.5">
+                <h2 class="text-classic-black-text-muted dark:text-classic-white-text-muted mb-1.5">
                     IUT de Nantes
                 </h2>
 
                 <a href="assets/CV Arthur Sillard.pdf" download="Arthur_Sillard_CV.pdf"
-                class="bg-azure-blue-400 flex items-center max-w-24 px-4 py-2 gap-2 border-2 rounded-2xl hover:bg-black hover:text-white transition">
+                class="bg-azure-blue-400 flex items-center max-w-24 px-4 py-2 gap-2 border-2 rounded-2xl hover:bg-classic-black-1 hover:text-classic-white-text transition">
 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
@@ -50,16 +50,16 @@
 
 
         <!-- Projects -->
-        <section id="Projects" class="mb-4 dark:text-white">
-            <div class="max-w-3xl mx-auto px-6 py-3 border-t border-zinc-300">
-                <h1 class="text-2xl font-semibold tracking-tight">
+        <section id="Projects" class="mb-4">
+            <div class="max-w-3xl mx-auto px-6 py-3 border-t border-classic-white-text-muted dark:border-classic-black-text-muted">
+                <h1 class="text-classic-black-text dark:text-classic-white-text text-2xl font-semibold tracking-tight">
                     Projets
                 </h1>
             </div>
-
-            <div class="bg-special-white-2 dark:bg-special-grey-2 max-w-3xl mx-auto px-6 py-3 rounded-3xl shadow-sm inset-shadow-sm inset-shadow-white dark:inset-shadow-gray-700 hover:scale-102 transition">
+            <!-- Old shadow : shadow-sm inset-shadow-sm inset-shadow-white dark:inset-shadow-gray-700 -->
+            <div class="bg-classic-white-2 dark:bg-classic-black-2 max-w-3xl mx-auto px-6 py-3 rounded-3xl shadow-s hover:scale-102 transition">
                 <div class="flex flex-col md:flex-row md:gap-2">
-                    <h1 class="text-xl font-semibold tracking-tight">Simulation de particules</h1>
+                    <h1 class="text-classic-black-text dark:text-classic-white-text text-xl font-semibold tracking-tight">Simulation de particules</h1>
 
                     <div class="flex gap-2">
                         <p class="px-2 bg-cyan-200 border border-cyan-600 rounded-xl">GoLang</p>
@@ -70,7 +70,7 @@
 
                 </div>
 
-                <div class="bg-special-white-1 dark:bg-special-grey-1 px-2 py-1 mt-1 rounded-xl shadow-sm inset-shadow-sm inset-shadow-white dark:inset-shadow-gray-700">
+                <div class="text-classic-black-text dark:text-classic-white-text bg-classic-white-3 dark:bg-classic-black-3 px-2 py-1 mt-2 rounded-xl shadow-s">
                     <p>Conception et développement d'un moteur de simulation de particules performant.</p>
                 </div>
             </div>
@@ -79,21 +79,24 @@
         </section>
 
         <!-- About -->
-        <section id="About" class="mb-4 dark:text-white">
-            <div class="max-w-3xl mx-auto px-6 py-3 border-t border-zinc-300">
-                <h1 class="text-2xl font-semibold tracking-tight">
+        <section id="About" class="mb-4">
+            <div class="max-w-3xl mx-auto px-6 py-3 border-t border-classic-white-text-muted dark:border-classic-black-text-muted">
+                <h1 class="text-classic-black-text dark:text-classic-white-text text-2xl font-semibold tracking-tight">
                     À propos de moi
                 </h1>
             </div>
             
 
 
-            <div class="bg-special-white-2 dark:bg-special-grey-2 max-w-3xl mx-auto px-6 py-3 rounded-3xl shadow-sm inset-shadow-sm inset-shadow-white dark:inset-shadow-gray-700 hover:scale-102 transition">
-                <h1 class="text-xl font-semibold tracking-tight">Éducation</h1>
-                <p>
-                    2025 -> Baccalauréat <br>
-                    2025-2026 -> BUT informatique
-                </p>
+            <div class="bg-classic-white-2 dark:bg-classic-black-2 max-w-3xl mx-auto px-6 py-3 rounded-3xl shadow-s hover:scale-102 transition">
+                <h1 class="text-classic-black-text dark:text-classic-white-text text-xl font-semibold tracking-tight">Éducation</h1>
+                <div class="text-classic-black-text dark:text-classic-white-text">
+                    <p>
+                        2025 -> Baccalauréat <br>
+                        2025-2026 -> BUT informatique
+                    </p>
+                </div>
+                
             </div>
             
         </section>
@@ -101,15 +104,17 @@
 
 
         <!-- Contact -->
-        <section id="Contact" class="mb-4 dark:text-white">
-            <div class="max-w-3xl mx-auto px-6 py-3 border-t border-zinc-300">
-                <h1 class="text-2xl font-semibold tracking-tight">
+        <section id="Contact" class="mb-4">
+            <div class="max-w-3xl mx-auto px-6 py-3 border-t border-classic-white-text-muted dark:border-classic-black-text-muted">
+                <h1 class="text-classic-black-text dark:text-classic-white-text text-2xl font-semibold tracking-tight">
                     Contact
                 </h1>
             </div>
 
-            <div class="bg-special-white-2 dark:bg-special-grey-2 max-w-3xl mx-auto px-6 py-3 rounded-3xl shadow-sm inset-shadow-sm inset-shadow-white dark:inset-shadow-gray-700 hover:scale-102 transition">
-                <p>Vous pouvez me contacter à l'adresse e-mail suivante : <span class="font-semibold tracking-tight">arthur.sillard@etu.univ-nantes.fr</span></p>
+            <div class="bg-classic-white-2 dark:bg-classic-black-2 max-w-3xl mx-auto px-6 py-3 rounded-3xl shadow-s hover:scale-102 transition">
+                <div class="text-classic-black-text dark:text-classic-white-text">
+                    <p>Vous pouvez me contacter à l'adresse e-mail suivante : <span class="font-semibold tracking-tight">arthur.sillard@etu.univ-nantes.fr</span></p>
+                </div>
             </div>
 
         </section>
