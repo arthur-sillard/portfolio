@@ -30,8 +30,8 @@
     --shadow-m: inset 0 1px 2px #ffffff50, 0 2px 4px #00000030, 0 4px 8px #00000015;
     --shadow-l: inset 0 1px 2px #ffffff70, 0 4px 6px #00000030, 0 6px 10px #00000015;
 
-    --shadow-lo-s: inset 0 1px 2px #ffffff30, 0 1px 2px #00000030, 0 2px 4px #00000015;
-    --shadow-lo-m: inset 0 1px 2px #ffffff50, 0 2px 4px #00000030, 0 4px 8px #00000015;
+    --shadow-lo-s: inset 0 1px 2px #ffffff30;
+    --shadow-lo-m: inset 0 1px 2px #ffffff50;
     --shadow-lo-l: inset 0 1px 2px #ffffff70;
 
     --shadow-button: inset 0 1px 2px #ffffff70, 0 0 0 5px #3b83f65f;
