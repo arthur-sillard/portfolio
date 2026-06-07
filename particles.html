@@ -36,9 +36,10 @@
                     Simulation de particules
                 </h1>
                 <span class="px-2 py-1 mr-2 bg-cyan-400 shadow-s rounded-xl text-sm">GoLang</span>
+                <span class="px-2 py-1 mr-2 bg-blue-violet-400 shadow-s rounded-xl text-sm">Ebitengine</span>
                 <span class="px-2 py-1 mr-2 bg-orange-400 shadow-s rounded-xl text-sm">BUT 1</span>
                 <p class="mt-2 text-classic-black-text dark:text-classic-white-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem debitis dolores voluptate voluptates facere ratione commodi repudiandae vitae repellat sapiente. Sint in officia autem iure qui voluptates magnam numquam quisquam.
+                    Simulateur de particules en deux dimensions développé en GoLang avec la bibliothèque Ebiten. Il intègre de nombreuses fonctionnalités ainsi qu'une interface utilisateur pour modifier ses paramètres en temps réel.
                 </p>
 
             </div>
@@ -53,39 +54,45 @@
             </h1>
             
             <div class="flex flex-col gap-4 md:flex-row mt-4">
-                <div class="bg-classic-white-3/30 dark:bg-classic-black-3/40 backdrop-blur-md rounded-2xl px-4 py-2 hover:bg-classic-white-3/50 dark:hover:bg-classic-black-3/80 transition duration-500">
+                <div class="bg-classic-white-3/30 dark:bg-classic-black-3/40 backdrop-blur-md rounded-2xl w-1/4 px-4 py-2 hover:bg-classic-white-3/60 dark:hover:bg-classic-black-3/80 transition duration-500">
                     <h4 class="text-classic-black-text dark:text-classic-white-text text-lg font-semibold tracking-tight">
-                        Lorem Ipsum
+                        Optimisation
                     </h4>
                     <p class="text-classic-black-text dark:text-classic-white-text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto libero cum distinctio dolor eveniet, temporibus, repudiandae enim nulla quidem accusantium omnis aut soluta dolorum rerum amet et hic dolorem optio?
+                        Le système a été optimisé de sorte à afficher le plus de particules possibles tout en restant à <span class="font-bold">60 images par secondes</span>. Les particules meurent et sont réutilisées, celles qui sont morte ne sont ni affichées ni actualisées.    
                     </p>
                 </div>
 
-                <div class="bg-classic-white-3/30 dark:bg-classic-black-3/40 backdrop-blur-md rounded-2xl px-4 py-2 hover:bg-classic-white-3/50 dark:hover:bg-classic-black-3/80 transition duration-500">
+                <div class="bg-classic-white-3/30 dark:bg-classic-black-3/40 backdrop-blur-md rounded-2xl w-1/4 px-4 py-2 hover:bg-classic-white-3/60 dark:hover:bg-classic-black-3/80 transition duration-500">
                     <h4 class="text-classic-black-text dark:text-classic-white-text text-lg font-semibold tracking-tight">
-                        Lorem Ipsum
+                        Système de collisions
                     </h4>
                     <p class="text-classic-black-text dark:text-classic-white-text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto libero cum distinctio dolor eveniet, temporibus, repudiandae enim nulla quidem accusantium omnis aut soluta dolorum rerum amet et hic dolorem optio?
+                        Nous avons implémenté un système qui gère les collisions entre les particules. Lui aussi a été optimisé de sorte à rester à 60 fps avec un maximum de particules.
                     </p>
                 </div>
 
-                <div class="bg-classic-white-3/30 dark:bg-classic-black-3/40 backdrop-blur-md rounded-2xl px-4 py-2 hover:bg-classic-white-3/50 dark:hover:bg-classic-black-3/80 transition duration-500">
+                <div class="bg-classic-white-3/30 dark:bg-classic-black-3/40 backdrop-blur-md rounded-2xl w-1/4 px-4 py-2 hover:bg-classic-white-3/60 dark:hover:bg-classic-black-3/80 transition duration-500">
                     <h4 class="text-classic-black-text dark:text-classic-white-text text-lg font-semibold tracking-tight">
-                        Lorem Ipsum
+                        Personalisation
                     </h4>
                     <p class="text-classic-black-text dark:text-classic-white-text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto libero cum distinctio dolor eveniet, temporibus, repudiandae enim nulla quidem accusantium omnis aut soluta dolorum rerum amet et hic dolorem optio?
+                        Il est possible de paramétrer le générateur comme bon vous semble afin d'obtenir l'effet que vous souhaitez. Couleur, forme du générateur, orientation des particules ou encore échelle, les possibilités sont immenses.
                     </p>
                 </div>
 
-                <div class="bg-classic-white-3/30 dark:bg-classic-black-3/40 backdrop-blur-md rounded-2xl px-4 py-2 hover:bg-classic-white-3/50 dark:hover:bg-classic-black-3/80 transition duration-500">
+                <div class="bg-classic-white-3/30 dark:bg-classic-black-3/40 backdrop-blur-md rounded-2xl w-1/4 px-4 py-2 hover:bg-classic-white-3/60 dark:hover:bg-classic-black-3/80 transition duration-500">
                     <h4 class="text-classic-black-text dark:text-classic-white-text text-lg font-semibold tracking-tight">
-                        Lorem Ipsum
+                        Gravité
                     </h4>
                     <p class="text-classic-black-text dark:text-classic-white-text">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto libero cum distinctio dolor eveniet, temporibus, repudiandae enim nulla quidem accusantium omnis aut soluta dolorum rerum amet et hic dolorem optio?
+                        Deux systèmes de "gravité" ont également étés implémentés. 
+                    </p>
+                    <p class="text-classic-black-text dark:text-classic-white-text">
+                        Le premier attire les particules vers le bas, en modifiant leur vitesse verticale petit à petit.
+                    </p>
+                    <p class="text-classic-black-text dark:text-classic-white-text">
+                        Le deuxième, lui, attire les particules vers le centre de l'écran. Cela permet de créer des effets visuels très intéressants.
                     </p>
                 </div>
             </div>
