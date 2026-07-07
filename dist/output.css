@@ -237,9 +237,6 @@
   .z-\[9999999999\] {
     z-index: 9999999999;
   }
-  .m-2 {
-    margin: calc(var(--spacing) * 2);
-  }
   .mx-2 {
     margin-inline: calc(var(--spacing) * 2);
   }
@@ -266,9 +263,6 @@
   }
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
-  }
-  .mb-1 {
-    margin-bottom: calc(var(--spacing) * 1);
   }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
@@ -302,6 +296,10 @@
   }
   .table {
     display: table;
+  }
+  .size-4 {
+    width: calc(var(--spacing) * 4);
+    height: calc(var(--spacing) * 4);
   }
   .size-5 {
     width: calc(var(--spacing) * 5);
@@ -392,9 +390,6 @@
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
-  .self-center {
-    align-self: center;
-  }
   .rounded {
     border-radius: 0.25rem;
   }
@@ -464,23 +459,11 @@
   .bg-orange-400 {
     background-color: var(--color-orange-400);
   }
-  .bg-zinc-800 {
-    background-color: var(--color-zinc-800);
-  }
-  .fill-current {
-    fill: currentcolor;
-  }
   .stroke-azure-blue-400 {
     stroke: var(--color-azure-blue-400);
   }
   .stroke-classic-black-text-muted {
     stroke: var(--color-classic-black-text-muted);
-  }
-  .stroke-current {
-    stroke: currentcolor;
-  }
-  .stroke-0 {
-    stroke-width: 0;
   }
   .p-2 {
     padding: calc(var(--spacing) * 2);
@@ -526,6 +509,15 @@
   }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
+  }
+  .pt-4 {
+    padding-top: calc(var(--spacing) * 4);
+  }
+  .pb-2 {
+    padding-bottom: calc(var(--spacing) * 2);
+  }
+  .pb-3 {
+    padding-bottom: calc(var(--spacing) * 3);
   }
   .font-title {
     font-family: var(--font-title);
@@ -574,15 +566,6 @@
   }
   .text-classic-black-text-muted {
     color: var(--color-classic-black-text-muted);
-  }
-  .text-classic-white-text {
-    color: var(--color-classic-white-text);
-  }
-  .text-classic-white-text-muted {
-    color: var(--color-classic-white-text-muted);
-  }
-  .text-neutral-500 {
-    color: var(--color-neutral-500);
   }
   .underline {
     text-decoration-line: underline;
@@ -685,27 +668,6 @@
       }
     }
   }
-  .hover\:bg-neutral-500 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-neutral-500);
-      }
-    }
-  }
-  .hover\:bg-special-black-2 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-special-black-2);
-      }
-    }
-  }
-  .hover\:bg-special-white-1 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-special-white-1);
-      }
-    }
-  }
   .hover\:bg-special-white-2 {
     &:hover {
       @media (hover: hover) {
@@ -720,31 +682,10 @@
       }
     }
   }
-  .hover\:text-classic-black-text-muted {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-classic-black-text-muted);
-      }
-    }
-  }
   .hover\:text-classic-white-text {
     &:hover {
       @media (hover: hover) {
         color: var(--color-classic-white-text);
-      }
-    }
-  }
-  .hover\:text-classic-white-text-muted {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-classic-white-text-muted);
-      }
-    }
-  }
-  .hover\:text-neutral-100 {
-    &:hover {
-      @media (hover: hover) {
-        color: var(--color-neutral-100);
       }
     }
   }
@@ -842,14 +783,6 @@
       &::before {
         content: var(--tw-content);
         background-color: var(--color-classic-white-2);
-      }
-    }
-  }
-  .data-\[tooltip\]\:before\:bg-white {
-    &[data-tooltip] {
-      &::before {
-        content: var(--tw-content);
-        background-color: var(--color-white);
       }
     }
   }
@@ -997,14 +930,6 @@
       }
     }
   }
-  .data-\[tooltip\]\:after\:bg-white {
-    &[data-tooltip] {
-      &::after {
-        content: var(--tw-content);
-        background-color: var(--color-white);
-      }
-    }
-  }
   .data-\[tooltip\]\:after\:px-2\.5 {
     &[data-tooltip] {
       &::after {
@@ -1059,22 +984,6 @@
       &::after {
         content: var(--tw-content);
         color: var(--color-classic-black-text);
-      }
-    }
-  }
-  .data-\[tooltip\]\:after\:text-classic-white-text {
-    &[data-tooltip] {
-      &::after {
-        content: var(--tw-content);
-        color: var(--color-classic-white-text);
-      }
-    }
-  }
-  .data-\[tooltip\]\:after\:text-zinc-800 {
-    &[data-tooltip] {
-      &::after {
-        content: var(--tw-content);
-        color: var(--color-zinc-800);
       }
     }
   }
@@ -1258,11 +1167,6 @@
       width: calc(1 / 4 * 100%);
     }
   }
-  .md\:w-2\/4 {
-    @media (width >= 48rem) {
-      width: calc(2 / 4 * 100%);
-    }
-  }
   .md\:grid-cols-5 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -1297,16 +1201,6 @@
     @media (width >= 48rem) {
       font-size: var(--text-3xl);
       line-height: var(--tw-leading, var(--text-3xl--line-height));
-    }
-  }
-  .md\:text-classic-black-text {
-    @media (width >= 48rem) {
-      color: var(--color-classic-black-text);
-    }
-  }
-  .lg\:block {
-    @media (width >= 64rem) {
-      display: block;
     }
   }
   .lg\:w-2\/4 {
@@ -1401,15 +1295,6 @@
       }
     }
   }
-  .dark\:hover\:bg-special-white-2 {
-    &:where(.dark, .dark *) {
-      &:hover {
-        @media (hover: hover) {
-          background-color: var(--color-special-white-2);
-        }
-      }
-    }
-  }
   .dark\:hover\:text-classic-white-text {
     &:where(.dark, .dark *) {
       &:hover {
@@ -1429,16 +1314,6 @@
       }
     }
   }
-  .dark\:data-\[tooltip\]\:before\:bg-classic-white-2 {
-    &:where(.dark, .dark *) {
-      &[data-tooltip] {
-        &::before {
-          content: var(--tw-content);
-          background-color: var(--color-classic-white-2);
-        }
-      }
-    }
-  }
   .dark\:data-\[tooltip\]\:after\:bg-classic-black-2 {
     &:where(.dark, .dark *) {
       &[data-tooltip] {
@@ -1449,32 +1324,12 @@
       }
     }
   }
-  .dark\:data-\[tooltip\]\:after\:bg-white {
-    &:where(.dark, .dark *) {
-      &[data-tooltip] {
-        &::after {
-          content: var(--tw-content);
-          background-color: var(--color-white);
-        }
-      }
-    }
-  }
   .dark\:data-\[tooltip\]\:after\:text-classic-white-text {
     &:where(.dark, .dark *) {
       &[data-tooltip] {
         &::after {
           content: var(--tw-content);
           color: var(--color-classic-white-text);
-        }
-      }
-    }
-  }
-  .dark\:data-\[tooltip\]\:after\:text-zinc-800 {
-    &:where(.dark, .dark *) {
-      &[data-tooltip] {
-        &::after {
-          content: var(--tw-content);
-          color: var(--color-zinc-800);
         }
       }
     }
