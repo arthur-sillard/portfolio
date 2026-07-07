@@ -377,10 +377,38 @@
                     Contact
                 </h2>
             </div>
-            <div class="bg-classic-white-2 dark:bg-classic-black-2 max-w-3xl mx-auto px-6 py-4 rounded-3xl shadow-s hover:shadow-m hover:scale-102 transition-all duration-300">
-                <p class="text-classic-black-text dark:text-classic-white-text">
-                    Vous pouvez me contacter à l'adresse e-mail suivante : <span class="font-semibold tracking-tight">arthur.sillard@etu.univ-nantes.fr</span>
-                </p>
+
+            <div class="bg-classic-white-2 dark:bg-classic-black-2 max-w-3xl mx-auto px-6 py-4 rounded-3xl shadow-s">
+                <h3 class="mb-4 text-classic-black-text dark:text-classic-white-text text-xl font-semibold tracking-tight">
+                    Envoyez-moi un mail
+                </h3>
+                <form
+                    action="https://formspree.io/f/xojozqgq"
+                    method="POST"
+                    class="flex flex-col gap-4"
+                >
+                    <div class="flex flex-col gap-2 text-classic-black-text dark:text-classic-white-text">
+                        <label for="email">Votre email:</label>
+                        <input type="email" name="email" placeholder="john.doe@gmail.com" class="p-2 rounded-xl shadow-s bg-classic-white-3 dark:bg-classic-black-3">
+                    </div>
+
+                    <div class="flex flex-col gap-2 text-classic-black-text dark:text-classic-white-text">
+                        <label for="subject">Objet:</label>
+                        <input name="subject" placeholder="Collaboration, etc..." class="p-2 rounded-xl shadow-s bg-classic-white-3 dark:bg-classic-black-3">
+                    </div>
+
+                     <div class="flex flex-col gap-2 text-classic-black-text dark:text-classic-white-text">
+                        <label for="message">Votre message:</label>
+                        <textarea name="message" placeholder="Votre message ..." class="p-2 rounded-xl shadow-s bg-classic-white-3 dark:bg-classic-black-3"></textarea>
+                    </div>
+
+                    <button type="submit" class="bg-azure-blue-400 text-classic-white-text font-semibold text-xl flex justify-center items-center gap-2 p-4 mt-3 rounded-2xl w-full shadow-lo-l hover:shadow-button hover:cursor-pointer transition-all duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                        </svg>
+                        Send
+                    </button>
+                </form>
             </div>
         </section>
 
