@@ -1,13 +1,19 @@
 const toggle = document.getElementById('theme-toggle')
 
-
-
 toggle?.addEventListener('click', () => {
 
     const isDark = document.documentElement.classList.toggle('dark')
 
     localStorage.setItem('theme', isDark ? 'dark' : 'light')
+})
 
+const toggleMobile = document.getElementById('theme-toggle-mobile')
+
+toggleMobile?.addEventListener('click', () => {
+
+    const isDark = document.documentElement.classList.toggle('dark')
+
+    localStorage.setItem('theme', isDark ? 'dark' : 'light')
 })
 
 
@@ -22,3 +28,18 @@ window.addEventListener("scroll", function(){
     }
     lastScrollTop = scrollTop;
 })
+
+
+const dropdown = document.getElementById("dropdownMenu");
+const button = document.getElementById("dropdownToggle");
+
+button.addEventListener("click", (e) => {
+    e.stopPropagation();
+    dropdown.classList.toggle("hidden");
+});
+
+window.addEventListener("click", (e) => {
+    if (!dropdown.contains(e.target) && !button.contains(e.target)) {
+        dropdown.classList.add("hidden");
+    }
+});
