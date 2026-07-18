@@ -16,6 +16,12 @@ toggleMobile?.addEventListener('click', () => {
     localStorage.setItem('theme', isDark ? 'dark' : 'light')
 })
 
+window.onbeforeunload = () => {
+    for(const form of document.getElementsByTagName('form')) {
+        form.reset();
+    }
+}
+
 
 let lastScrollTop = 0;
 navbar = document.getElementById("navbar");

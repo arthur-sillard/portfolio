@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -205,7 +205,7 @@
                                         <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
                                     </svg>
                                 </span>
-                                <time class="bg-classic-white-3 dark:bg-classic-black-3 shadow-s text-classic-black-text dark:text-classic-white-text text-xs font-medium px-1.5 py-0.5 rounded">2025 - 2026</time>
+                                <time class="bg-classic-white-3 dark:bg-classic-black-3 shadow-s text-classic-black-text dark:text-classic-white-text text-xs font-medium px-1.5 py-0.5 rounded">2025 - Maintenant</time>
                                 <div class="flex flex-col-reverse md:flex-row md:items-center gap-2 my-2">
                                     <h4 class="text-classic-black-text dark:text-classic-white-text text-lg font-semibold">BUT Informatique</h4>
                                     <span class="bg-azure-blue-400/10 border border-azure-blue-400 text-azure-blue-400 text-xs font-medium px-1.5 py-0.5 rounded w-fit">Actuellement</span>
@@ -378,37 +378,86 @@
                 </h2>
             </div>
 
-            <div class="bg-classic-white-2 dark:bg-classic-black-2 max-w-3xl mx-auto px-6 py-4 rounded-3xl shadow-s">
-                <h3 class="mb-4 text-classic-black-text dark:text-classic-white-text text-xl font-semibold tracking-tight">
-                    Envoyez-moi un mail
-                </h3>
-                <form
-                    action="https://formspree.io/f/xojozqgq"
-                    method="POST"
-                    class="flex flex-col gap-4"
-                >
-                    <div class="flex flex-col gap-2 text-classic-black-text dark:text-classic-white-text">
-                        <label for="email">Votre email:</label>
-                        <input type="email" name="email" placeholder="john.doe@gmail.com" class="p-2 rounded-xl shadow-s bg-classic-white-3 dark:bg-classic-black-3">
-                    </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
 
-                    <div class="flex flex-col gap-2 text-classic-black-text dark:text-classic-white-text">
-                        <label for="subject">Objet:</label>
-                        <input name="subject" placeholder="Collaboration, etc..." class="p-2 rounded-xl shadow-s bg-classic-white-3 dark:bg-classic-black-3">
-                    </div>
+            
 
-                     <div class="flex flex-col gap-2 text-classic-black-text dark:text-classic-white-text">
-                        <label for="message">Votre message:</label>
-                        <textarea name="message" placeholder="Votre message ..." class="p-2 rounded-xl shadow-s bg-classic-white-3 dark:bg-classic-black-3"></textarea>
-                    </div>
+                <div class="bg-classic-white-2 dark:bg-classic-black-2 md:col-span-2 px-6 py-4 rounded-3xl shadow-s">
+                    <h3 class="mb-4 text-classic-black-text dark:text-classic-white-text text-xl font-semibold tracking-tight">
+                        Envoyez-moi un mail
+                    </h3>
+                    <form
+                        action="https://formspree.io/f/xojozqgq"
+                        method="POST"
+                        class="flex flex-col gap-4"
+                    >
+                        <div class="flex flex-col gap-2 text-classic-black-text dark:text-classic-white-text">
+                            <label for="email">Votre email:</label>
+                            <input type="email" name="email" placeholder="john.doe@gmail.com" class="p-2 rounded-xl shadow-s bg-classic-white-3 dark:bg-classic-black-3">
+                        </div>
 
-                    <button type="submit" class="bg-azure-blue-400 text-classic-white-text font-semibold text-xl flex justify-center items-center gap-2 p-4 mt-3 rounded-2xl w-full shadow-lo-l hover:shadow-button hover:cursor-pointer transition-all duration-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
-                        </svg>
-                        Send
-                    </button>
-                </form>
+                        <div class="flex flex-col gap-2 text-classic-black-text dark:text-classic-white-text">
+                            <label for="subject">Objet:</label>
+                            <input name="subject" placeholder="Collaboration, etc..." class="p-2 rounded-xl shadow-s bg-classic-white-3 dark:bg-classic-black-3">
+                        </div>
+
+                        <div class="flex flex-col gap-2 text-classic-black-text dark:text-classic-white-text">
+                            <label for="message">Votre message:</label>
+                            <textarea name="message" placeholder="Votre message ..." class="p-2 rounded-xl shadow-s bg-classic-white-3 dark:bg-classic-black-3"></textarea>
+                        </div>
+
+                        <button type="submit" class="bg-azure-blue-400 text-classic-white-text flex justify-center items-center gap-2 p-4 mt-3 rounded-2xl w-full shadow-lo-l hover:shadow-button hover:cursor-pointer transition-all duration-300">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5" />
+                            </svg>
+                            <span class="font-semibold text-2xl">
+                                Envoyer
+                            </span>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="bg-classic-white-2 dark:bg-classic-black-2 px-6 py-4 rounded-3xl shadow-s">
+                    <h3 class="mb-4 text-classic-black-text dark:text-classic-white-text text-xl font-semibold tracking-tight">
+                        Retrouvez moi
+                    </h3>
+
+                    <div class="flex flex-col gap-2">                    
+
+                        <div class="bg-classic-white-3 dark:bg-classic-black-3 px-6 py-4 rounded-3xl flex grow items-center justify-start gap-4 w-full">
+                            <svg stroke-linejoin="round" stroke-linecap="round" stroke-width="2" stroke="currentColor" fill="none" viewBox="0 0 24 24" class="size-8 shrink-0 text-classic-black-text dark:text-classic-white-text">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                            </svg>
+
+                            <a href="https://github.com/arthur-sillard" class="flex items-baseline gap-1 text-classic-black-text dark:text-classic-white-text hover:text-azure-blue-400 transition-all duration-200">
+                                <span class="text-xl tracking-tight mr-1">
+                                    GitHub
+                                </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" stroke-width="2" stroke="currentColor" class="size-3 ">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M1 15L15 1M15 1H4.5M15 1V11.5" />
+                                </svg>
+                            </a>
+
+                        </div>
+
+                        <div class="bg-classic-white-3 dark:bg-classic-black-3 px-6 py-4 rounded-3xl flex grow items-center justify-start gap-4 w-full">
+                            <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" class="size-8 shrink-0 text-classic-black-text dark:text-classic-white-text">
+                                <path d="M19 0H5C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5zM8 19H5V8h3v11zM6.5 6.73C5.5 6.73 4.75 6 4.75 5.04S5.5 3.36 6.5 3.36s1.75.72 1.75 1.68S7.5 6.73 6.5 6.73zM20 19h-3v-5.6c0-3.37-4-3.11-4 0V19h-3V8h3v1.77C14.4 7.41 20 7.22 20 12.48V19z"/>
+                            </svg>
+
+                            <a href="https://www.linkedin.com/in/arthur-sillard-250b44418" class="flex items-baseline gap-1 text-classic-black-text dark:text-classic-white-text hover:text-azure-blue-400 transition-all duration-200">
+                                <span class="text-xl tracking-tight mr-1">
+                                    Linkedin
+                                </span>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 16" stroke-width="2" stroke="currentColor" class="size-3 ">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M1 15L15 1M15 1H4.5M15 1V11.5" />
+                                </svg>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </section>
 
