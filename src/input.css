@@ -1,5 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 @custom-variant dark (&:where(.dark, .dark *));
 
@@ -49,6 +49,12 @@
 }
 
 @theme {
+    --font-fugaz: "Fugaz One", Arial;
+    --font-jetbrains: "JetBrains Mono", monospace;
+    --font-work: "Work Sans", monospace, system-ui;
+
+
+
     --color-special-white-1: #E4E4E4;
     --color-special-white-2: #F2F2F2;
     --color-special-white-3: #FFFFFF;
@@ -83,8 +89,6 @@
     --shadow-lo-l: inset 0 1px 2px #ffffff70;
 
     --shadow-button: inset 0 1px 2px #ffffff70, 0 0 0 5px #3b83f65f;
-
-    --font-title: "Inter", sans-serif;
 
 
     --color-amber-gold-50: #fff8e5;
